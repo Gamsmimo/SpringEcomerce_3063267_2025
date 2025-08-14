@@ -17,7 +17,7 @@ public interface IUsuarioService {
 
 	Optional<Usuario> finById(Integer id);
 
-	Optional<Usuario> finByEmail(Integer Email);
+	Optional<Usuario> finByEmail(String Email);
 
 	List<Usuario> finAll();
 

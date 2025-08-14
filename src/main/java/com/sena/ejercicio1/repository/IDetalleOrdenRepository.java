@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.sena.ejercicio1.model.DetalleOrden;
 
 @Repository
-public interface IDetalleOrden extends JpaRepository<DetalleOrden, Integer> {
+public interface IDetalleOrdenRepository extends JpaRepository<DetalleOrden, Integer> {
 
 }

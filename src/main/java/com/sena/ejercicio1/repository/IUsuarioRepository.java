@@ -10,7 +10,7 @@ import com.sena.ejercicio1.model.Usuario;
 @Repository
 public interface IUsuarioRepository extends JpaRepository<Usuario, Integer> {
 	
-	Optional<Usuario> findByemail(String Email);
+	Optional<Usuario> findByEmail(String email);
 
 	Optional<Usuario> findByUsername(String username);
 

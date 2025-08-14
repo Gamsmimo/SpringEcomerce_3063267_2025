@@ -9,7 +9,7 @@ import com.sena.ejercicio1.model.Orden;
 import com.sena.ejercicio1.model.Usuario;
 
 @Repository
-public interface IOrden extends JpaRepository<Orden, Integer> {
+public interface IOrdenRepository extends JpaRepository<Orden, Integer> {
 
 	List<Orden> findByUsuario(Usuario usuario);
 	
