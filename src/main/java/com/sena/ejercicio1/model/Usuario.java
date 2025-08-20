@@ -10,13 +10,14 @@ import jakarta.persistence.Table;
 //anotation jpa
 
 @Entity
-@Table (name="usuarios")
+@Table(name = "usuarios")
 public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nombre;
 	private String email;
+	private String username;
 	private String documento;
 	private String telefono;
 	private String password;
@@ -34,12 +35,13 @@ public class Usuario {
 	}
 
 	// constructor con campos
-	public Usuario(Integer id, String nombre, String email, String documento, String telefono, String password,
-			String direccion, String tipo) {
+	public Usuario(Integer id, String nombre, String email, String username, String documento, String telefono,
+			String password, String direccion, String tipo) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.email = email;
+		this.username = username;
 		this.documento = documento;
 		this.telefono = telefono;
 		this.password = password;
@@ -48,6 +50,7 @@ public class Usuario {
 	}
 
 //geters and seters
+
 	public Integer getId() {
 		return id;
 	}
@@ -70,6 +73,14 @@ public class Usuario {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getDocumento() {
@@ -112,11 +123,27 @@ public class Usuario {
 		this.tipo = tipo;
 	}
 
+	public List<Producto> getProductos() {
+		return productos;
+	}
+
+	public void setProductos(List<Producto> productos) {
+		this.productos = productos;
+	}
+
+	public List<Orden> getOrdenes() {
+		return ordenes;
+	}
+
+	public void setOrdenes(List<Orden> ordenes) {
+		this.ordenes = ordenes;
+	}
+
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", nombre=" + nombre + ", email=" + email + ", documento=" + documento
-				+ ", telefono=" + telefono + ", password=" + password + ", direccion=" + direccion + ", tipo=" + tipo
-				+ "]";
+		return "Usuario [id=" + id + ", nombre=" + nombre + ", email=" + email + ", username=" + username
+				+ ", documento=" + documento + ", telefono=" + telefono + ", password=" + password + ", direccion="
+				+ direccion + ", tipo=" + tipo + "]";
 	}
 
 }

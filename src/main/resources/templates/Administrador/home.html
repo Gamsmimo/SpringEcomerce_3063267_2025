@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="htpp://www.thymeLeaf.org"><!--convertir plantilla a rhymeLearf-->
+
+
+<head th:insert="~{Administrador/template_admin.html::head}"></head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<div th:insert="~{Administrador/template_admin.html::header}"></div>
+	<!-- End Header -->
+
+	<!-- ======= Sidebar ======= -->
+	<div th:insert="~{Administrador/template_admin.html::aside}"></div>
+	<!-- End Sidebar-->
+
+	<main id="main" class="main">
+
+		<div class="pagetitle">
+			<h1>Panel de Administrador</h1>
+			<nav>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					<li class="breadcrumb-item active">Administrador</li>
+				</ol>
+			</nav>
+		</div><!-- End Page Title -->
+
+		<section class="section dashboard">
+			<p>Hola mundo</p>
+		</section>
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<div th:insert="~{Administrador/template_admin.html::footer}"></div>
+	<!-- End Footer -->
+
+
+	<!-- Vendor JS Files -->
+	<div th:insert="~{Administrador/template_admin.html::jsFiles}"></div>
+
+
+
+</body>
+
+</html>
