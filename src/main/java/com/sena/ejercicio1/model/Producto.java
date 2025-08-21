@@ -44,55 +44,62 @@ public Producto(Integer id, String nombre, String descripcion, String imagen, Do
  
  //getters and setters
 
- public Integer getId() {
+ 
+public Integer getId() {
 	return id;
- }
+}
 
- public void setId(Integer id) {
+public void setId(Integer id) {
 	this.id = id;
- }
+}
 
- public String getNombre() {
+public String getNombre() {
 	return nombre;
- }
+}
 
- public void setNombre(String nombre) {
+public void setNombre(String nombre) {
 	this.nombre = nombre;
- }
+}
 
- public String getDescripcion() {
+public String getDescripcion() {
 	return descripcion;
- }
+}
 
- public void setDescripcion(String descripcion) {
+public void setDescripcion(String descripcion) {
 	this.descripcion = descripcion;
- }
+}
 
- public String getImagen() {
+public String getImagen() {
 	return imagen;
- }
+}
 
- public void setImagen(String imagen) {
+public void setImagen(String imagen) {
 	this.imagen = imagen;
- }
+}
 
- public Double getPrecio() {
+public Double getPrecio() {
 	return precio;
- }
+}
 
- public void setPrecio(Double precio) {
+public void setPrecio(Double precio) {
 	this.precio = precio;
- }
+}
 
- public Integer getCantidad() {
+public Integer getCantidad() {
 	return cantidad;
- }
+}
 
- public void setCantidad(Integer cantidad) {
+public void setCantidad(Integer cantidad) {
 	this.cantidad = cantidad;
- }
+}
 
+public Usuario getUsuario() {
+	return usuario;
+}
 
+public void setUsuario(Usuario usuario) {
+	this.usuario = usuario;
+}
 
 
 
@@ -101,6 +108,8 @@ public Producto(Integer id, String nombre, String descripcion, String imagen, Do
 	return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", imagen=" + imagen
 			+ ", precio=" + precio + ", cantidad=" + cantidad + "]";
  }
+
+
  
 
  

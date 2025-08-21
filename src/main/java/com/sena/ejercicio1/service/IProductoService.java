@@ -7,7 +7,7 @@ import com.sena.ejercicio1.model.Producto;
 
 public interface IProductoService {
 
-	public Producto save(Producto produto);
+	public Producto save(Producto producto);
 
 	public Optional<Producto> get(Integer id);
 
