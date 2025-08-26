@@ -40,7 +40,7 @@ public class ProductoController {
 	}
 
 //metodo de creacion de productos
-	@PostMapping
+	@PostMapping("/save")
 	public String save(Producto producto) {
 		LOGGER.info("Este es el objeto del producto a guardar en la DB{}", producto);
 		Usuario u = new Usuario(1, "", "", "", "", "", "", "", "");
@@ -75,7 +75,7 @@ public class ProductoController {
 	@GetMapping("/delete/{id}")
 	public String delete(@PathVariable Integer id) {
 		productoservice.delete(id);
-		return"redirect:/productos";
+		return "redirect:/productos";
 	}
-								
+
 }
