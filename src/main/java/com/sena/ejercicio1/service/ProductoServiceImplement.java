@@ -39,7 +39,7 @@ private IProductoRepository productoRepository;
 	}
 
 	@Override
-	public List<Producto> finAll() {
+	public List<Producto> findAll() {
 		// TODO Auto-generated method stub
 		return productoRepository.findAll();
 	}
